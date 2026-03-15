@@ -43,6 +43,9 @@ function y() {
     rm -f -- "$tmp"
 }
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 # ----- good bloat identifier ------
 # zmodload zsh/zprof
 # # (Close and reopen terminal, then run:)
