@@ -1,0 +1,344 @@
+-- -- === Auto cleanup to keep Markdown clean after viewing Org ===
+-- do
+--   local group = vim.api.nvim_create_augroup("User/OrgMarkdownSanity", { clear = true })
+--
+--   -- quick check: does the given buffer have any marks from these namespaces?
+--   local function buf_has_leaked_org_marks(bufnr)
+--     local ns = vim.api.nvim_get_namespaces() or {}
+--     for _, name in ipairs({ "headlines_namespace", "org-bullets" }) do
+--       local id = ns[name]
+--       if id then
+--         local ok, marks = pcall(vim.api.nvim_buf_get_extmarks, bufnr, id, 0, -1, {})
+--         if ok and #marks > 0 then return true end
+--       end
+--     end
+--     return false
+--   end
+--
+--   -- the cleanup you tested, as a function
+--   local function cleanup_markdown_buffer(bufnr)
+--     bufnr = bufnr or vim.api.nvim_get_current_buf()
+--
+--     -- 1) try to disable headlines for this buffer
+--     local ok_h, headlines = pcall(require, "headlines")
+--     if ok_h and type(headlines) == "table" then
+--       if type(headlines.disable_for_buffer) == "function" then pcall(headlines.disable_for_buffer, bufnr) end
+--       if type(headlines.disable) == "function" then pcall(headlines.disable, bufnr) end
+--       if type(headlines.namespace) == "number" then
+--         pcall(vim.api.nvim_buf_clear_namespace, bufnr, headlines.namespace, 0, -1)
+--       end
+--     end
+--
+--     -- 2) try to detach/clear org-bullets for this buffer
+--     local ok_ob, orgbul = pcall(require, "org-bullets")
+--     if ok_ob and type(orgbul) == "table" then
+--       for _, fn in ipairs({ "detach", "disable", "clear", "cleanup" }) do
+--         if type(orgbul[fn]) == "function" then pcall(orgbul[fn], bufnr) end
+--       end
+--     end
+--
+--     -- 3) clear all namespaces (defensive), then the specific ones if present
+--     local names = vim.api.nvim_get_namespaces() or {}
+--     for _, id in pairs(names) do pcall(vim.api.nvim_buf_clear_namespace, bufnr, id, 0, -1) end
+--     for _, id in ipairs({ 28, 30, 45, 51 }) do  -- ids you observed; safe if missing
+--       pcall(vim.api.nvim_buf_clear_namespace, bufnr, id, 0, -1)
+--     end
+--
+--     -- 4) ensure markview is attached and rendered
+--     local ok_mv, mv = pcall(require, "markview")
+--     if not ok_mv then
+--       -- attempt to lazy-load if available, then require again
+--       pcall(function()
+--         local ok_lazy, lazy = pcall(require, "lazy")
+--         if ok_lazy then lazy.load({ plugins = { "OXY2DEV/markview.nvim" } }) end
+--       end)
+--       ok_mv, mv = pcall(require, "markview")
+--     end
+--
+--     if ok_mv and type(mv) == "table" then
+--       if type(mv.detach) == "function" then pcall(mv.detach, bufnr) end
+--       if type(mv.attach) == "function" then pcall(mv.attach, bufnr) end
+--       if type(mv.render) == "function" then pcall(mv.render, bufnr) end
+--     else
+--       pcall(vim.cmd, ("silent! Markview attach %d"):format(bufnr))
+--       pcall(vim.cmd, "silent! Markview render")
+--     end
+--
+--     -- 5) restore window-local markdown options
+--     local w = vim.fn.bufwinid(bufnr)
+--     if w and w ~= -1 then
+--       pcall(vim.api.nvim_win_call, w, function()
+--         vim.wo.conceallevel = 2
+--         vim.wo.concealcursor = "nc"
+--       end)
+--     end
+--   end
+--
+--   -- A) When an Org window closes, sanitize any visible Markdown windows
+--   vim.api.nvim_create_autocmd("BufWinLeave", {
+--     group = group,
+--     pattern = "*.org",
+--     callback = function()
+--       for _, win in ipairs(vim.api.nvim_list_wins()) do
+--         local buf = vim.api.nvim_win_get_buf(win)
+--         if vim.api.nvim_buf_is_valid(buf) then
+--           local ft = vim.bo[buf].filetype
+--           if ft == "markdown" or ft == "md" or ft == "markdown.mdx" then
+--             if buf_has_leaked_org_marks(buf) then
+--               cleanup_markdown_buffer(buf)
+--             end
+--           end
+--         end
+--       end
+--     end,
+--   })
+--
+--   -- B) When (re)entering a Markdown window, clean it if any Org/Headlines marks leaked in
+--   vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+--     group = group,
+--     pattern = { "*.md", "*.markdown", "*.mdx" },
+--     callback = function(args)
+--       -- Gate on filetype too, in case a non-markdown file uses .mdx extension for something odd
+--       local ft = vim.bo[args.buf].filetype
+--       if ft == "markdown" or ft == "md" or ft == "markdown.mdx" then
+--         if buf_has_leaked_org_marks(args.buf) then
+--           cleanup_markdown_buffer(args.buf)
+--         end
+--       end
+--     end,
+--   })
+-- end
+
+-- -- Defensive automatic cleanup when an Org window is closed:
+-- -- place this AFTER require("lazy").setup(...) in your init.lua
+-- do
+--   local group = vim.api.nvim_create_augroup("User/OrgViewCleanup", { clear = false })
+--
+--   vim.api.nvim_create_autocmd("BufWinLeave", {
+--     group = group,
+--     pattern = "*.org",
+--     callback = function()
+--       for _, win in ipairs(vim.api.nvim_list_wins()) do
+--         local buf = vim.api.nvim_win_get_buf(win)
+--         if not vim.api.nvim_buf_is_valid(buf) then goto continue end
+--         local ft = vim.bo[buf].filetype or ""
+--
+--         if ft == "markdown" or ft == "md" or ft == "markdown.mdx" then
+--           -- 1) attempt to disable headlines for this buffer and clear its namespace
+--           pcall(function()
+--             local ok_h, headlines = pcall(require, "headlines")
+--             if ok_h and type(headlines) == "table" then
+--               if type(headlines.disable_for_buffer) == "function" then pcall(headlines.disable_for_buffer, buf) end
+--               if type(headlines.disable) == "function" then pcall(headlines.disable, buf) end
+--               if type(headlines.namespace) == "number" then
+--                 pcall(vim.api.nvim_buf_clear_namespace, buf, headlines.namespace, 0, -1)
+--               end
+--             end
+--           end)
+--
+--           -- 2) attempt to detach/clear org-bullets for this buffer (if API exists)
+--           pcall(function()
+--             local ok_ob, orgbul = pcall(require, "org-bullets")
+--             if ok_ob and type(orgbul) == "table" then
+--               for _, fn in ipairs({ "detach", "disable", "clear", "cleanup" }) do
+--                 if type(orgbul[fn]) == "function" then pcall(orgbul[fn], buf) end
+--               end
+--             end
+--           end)
+--
+--           -- 3) Clear all plugin namespaces for this buffer (removes extmarks/virttext)
+--           pcall(function()
+--             local ns = vim.api.nvim_get_namespaces() or {}
+--             for _, id in pairs(ns) do pcall(vim.api.nvim_buf_clear_namespace, buf, id, 0, -1) end
+--             -- also clear the IDs we observed earlier (safe if they don't exist)
+--             for _, id in ipairs({28, 30, 45, 51}) do pcall(vim.api.nvim_buf_clear_namespace, buf, id, 0, -1) end
+--           end)
+--
+--           -- 4) re-attach + re-render markview for the markdown buffer
+--           pcall(function()
+--             local ok_mv, mv = pcall(require, "markview")
+--             if ok_mv and type(mv) == "table" then
+--               if type(mv.detach) == "function" then pcall(mv.detach, buf) end
+--               if type(mv.attach) == "function" then pcall(mv.attach, buf) end
+--               if type(mv.render) == "function" then pcall(mv.render, buf) end
+--             else
+--               pcall(vim.cmd, ("silent! Markview attach %d"):format(buf))
+--               pcall(vim.cmd, "silent! Markview render")
+--             end
+--           end)
+--
+--           -- 5) reassert common markdown window-local options for the window that displays this buffer
+--           pcall(function()
+--             local winid = vim.fn.bufwinid(buf)
+--             if winid and winid ~= -1 then
+--               vim.api.nvim_win_call(winid, function()
+--                 vim.wo.conceallevel = 2
+--                 vim.wo.concealcursor = "nc"
+--               end)
+--             end
+--           end)
+--         end
+--
+--         ::continue::
+--       end
+--     end,
+--   })
+-- end
+--
+-- -- Initialize view-enhancement plugins AFTER buffer's filetype is set
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "org",
+--   callback = function()
+--     -- when the first org buffer opens, ask lazy to load (safe even if already loaded)
+--     if pcall(require, "org-bullets") then return end
+--     require("lazy").load({ plugins = { "akinsho/org-bullets.nvim", "lukas-reineke/headlines.nvim" } })
+--     require("org-bullets").setup{}
+--     require("headlines").setup{}
+--   end,
+-- })
+--
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = { "markdown", "md", "markdown.mdx" },
+--   callback = function()
+--     if pcall(require, "markview") then return end
+--     require("lazy").load({ plugins = { "OXY2DEV/markview.nvim" } })
+--     require("markview").setup{}
+--   end,
+-- })
+-- -- Defensive cleanup when leaving org windows (remove stray org visuals from markdown)
+-- vim.api.nvim_create_autocmd("BufWinLeave", {
+--   pattern = "*.org",
+--   callback = function()
+--     for _, win in ipairs(vim.api.nvim_list_wins()) do
+--       local buf = vim.api.nvim_win_get_buf(win)
+--       if not vim.api.nvim_buf_is_valid(buf) then goto continue end
+--       local ft = vim.bo[buf].filetype or ""
+--
+--       if ft == "markdown" or ft == "md" or ft == "markdown.mdx" then
+--         -- 1) Try to tell org-bullets to detach/disable/clear for this buffer (if API exists)
+--         do
+--           local ok, ob = pcall(require, "org-bullets")
+--           if ok and type(ob) == "table" then
+--             for _, fn in ipairs({ "detach", "disable", "clear", "cleanup" }) do
+--               if type(ob[fn]) == "function" then
+--                 pcall(ob[fn], buf)
+--               end
+--             end
+--           end
+--         end
+--
+--         -- 2) Disable headlines for this buffer and clear its namespace if present
+--         do
+--           local ok_h, headlines = pcall(require, "headlines")
+--           if ok_h and type(headlines) == "table" then
+--             if type(headlines.disable) == "function" then
+--               pcall(headlines.disable, buf)
+--             elseif type(headlines.disable_for_buffer) == "function" then
+--               pcall(headlines.disable_for_buffer, buf)
+--             end
+--
+--             -- clear highlights/extmarks created by headlines
+--             if type(headlines.namespace) == "number" then
+--               pcall(vim.api.nvim_buf_clear_namespace, buf, headlines.namespace, 0, -1)
+--             end
+--           end
+--         end
+--
+--         -- 3) Ensure markview is attached/rendered for markdown buffers (reapply correct visuals)
+--         do
+--           local ok_m, mv = pcall(require, "markview")
+--           if ok_m and type(mv) == "table" then
+--             if type(mv.detach) == "function" then
+--               -- ensure no stray markview state exists for this buf before attach
+--               -- (some versions require detach before attach)
+--               pcall(mv.detach, buf)
+--             end
+--             if type(mv.attach) == "function" then
+--               pcall(mv.attach, buf)
+--             elseif type(mv.enable) == "function" then
+--               pcall(mv.enable, buf)
+--             else
+--               pcall(vim.cmd, ("silent! Markview attach %d"):format(buf))
+--             end
+--
+--             -- force re-render to ensure visuals are correct
+--             if type(mv.render) == "function" then
+--               pcall(mv.render, buf)
+--             elseif type(mv.splitview_render) == "function" then
+--               pcall(mv.splitview_render, buf)
+--             end
+--           else
+--             -- fallback to command mode if module not loaded
+--             pcall(vim.cmd, ("silent! Markview attach %d"):format(buf))
+--             pcall(vim.cmd, "silent! Markview render")
+--           end
+--         end
+--
+--         -- 4) Re-assert window-local options for the window that shows this buffer
+--         do
+--           local winid = vim.fn.bufwinid(buf)
+--           if winid and winid ~= -1 then
+--             pcall(vim.api.nvim_win_call, winid, function()
+--               vim.wo.conceallevel = 2
+--               vim.wo.concealcursor = "nc"
+--               -- optionally set foldmethod back to what you prefer:
+--               -- vim.wo.foldmethod = "manual"
+--             end)
+--           end
+--         end
+--       end
+--
+--       ::continue::
+--     end
+--   end,
+-- })
+
+-- vim.api.nvim_create_autocmd("BufWinLeave", {
+--   group = vim.api.nvim_create_augroup("User/ViewPluginsRestore", { clear = false }),
+--   pattern = "*.org",
+--   callback = function()
+--     for _, win in ipairs(vim.api.nvim_list_wins()) do
+--       local buf = vim.api.nvim_win_get_buf(win)
+--       local ok_ft, ft = pcall(function() return vim.bo[buf].filetype end)
+--       if not ok_ft then ft = nil end
+--
+--       if ft == "markdown" or ft == "md" or ft == "markdown.mdx" then
+--         -- Try to require markview safely (capture both ok and module)
+--         local ok, mv = pcall(require, "markview")
+--         if not ok then
+--           -- attempt to lazy-load the plugin and require again
+--           if pcall(require, "lazy") then
+--             pcall(require("lazy").load, { plugins = { "OXY2DEV/markview.nvim" } })
+--             ok, mv = pcall(require, "markview")
+--           end
+--         end
+--
+--         -- If we have a module table, prefer its attach/enable API
+--         if ok and type(mv) == "table" then
+--           if type(mv.attach) == "function" then
+--             pcall(mv.attach, buf)
+--           elseif type(mv.enable) == "function" then
+--             pcall(mv.enable, buf)
+--           else
+--             pcall(vim.cmd, ("silent! Markview attach %d"):format(buf))
+--           end
+--         else
+--           -- fallback: try the command attach anyway (will silently fail if not available)
+--           pcall(vim.cmd, ("silent! Markview attach %d"):format(buf))
+--         end
+--
+--         -- Re-assert typical markdown window-local options for that window
+--         local w = vim.fn.bufwinid(buf)
+--         if w and w ~= -1 then
+--           pcall(vim.api.nvim_win_call, w, function()
+--             -- set values you prefer for markdown windows
+--             vim.wo.conceallevel = 2
+--             vim.wo.concealcursor = "nc"
+--             -- optionally set foldmethod if you prefer
+--             -- vim.wo.foldmethod = "expr"
+--           end)
+--         end
+--       end
+--     end
+--   end,
+-- })

@@ -1,0 +1,44 @@
+#+TITLE: Org Mode Basics in Doom Emacs
+#+DESCRIPTION: test/practice org mode here.
+#+AUTHOR: SLAP
+
+* A new headline
+** Level 2 Headline
+*** Level 3
+**** Level 4
+***** LEvel 5
+* Getting started!
+- Read with M-x org-info
+- `C-RET` makes a new line with the same header/style!
+* Motions
+** Next/prev heading
+gj/gk
+** next/prev child element
+gh/gl
+* Structure Editing
+** New heading of same level: C-RET
+** Promote/demote current heading: M-h/S-l
+** Move heading up/down: M-j/S-
+** Move item but not subtree: M-S-j/k
+*** vae : "visual-mode around element"
+* Inserting snippets
+** SPC-i-s
+* TODO
+** TODO two
+** TODO example three
+** To remove the TODO: SHIFT-LEFT
+** To toggle TODO states: SPC-m-t (org-*m*(ode)-*t*(odo))
+** org-schedule : SPC-m-d-s
+*** RET toggles TODO and checkboxes!!
+* Checklists [1/4] [25%]
+- [ ] please
+- [X] oh no
+- [ ] help
+- [ ] me
+*** SPC-m-x to update checkboxes
+OR return
+* for later:
+** org-check-deadlines (?)
+could be useful for the agenda
+** C-x-LEFT goes to previous buffer
+setq org-log-done 'time'

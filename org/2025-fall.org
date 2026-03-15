@@ -1,0 +1,480 @@
+#+TITLE: TODOS
+#+DESCRIPTION: Everything should make its way through here eventually.
+#+AUTHOR: Slap
+
+* School
+** 2025 Fall
+*** Intro to Engineering and Design : EG-UY 1004 Secion H
+:PROPERTIES:
+:CATEGORY: EG-UY 1004
+:END:
+**** DONE SLDP Team Maker Survey (CATME)
+DEADLINE: <2025-09-06 Sat>
+**** DONE Review for Recitation 1
+DEADLINE: <2025-09-07 Sun>
+:PROPERTIES:
+:EFFORT:   00:30
+:END:
+**** DONE Week 1 Lecture Materials + Assignment
+DEADLINE: <2025-09-07 Sun>
+:PROPERTIES:
+:EFFORT:   01:00
+:END:
+**** DONE Skills Workshop 1 Memo
+DEADLINE: <2025-09-10 Wed>
+**** DONE [#A] Skills Workshop 2 Presentation
+SCHEDULED: <2025-09-12 Fri> DEADLINE: <2025-09-15 Mon>
+**** DONE [#A] Skills Workshop 2 Memo
+DEADLINE: <2025-09-17 Wed>
+**** DONE Skills Workshop 3 Presentation
+DEADLINE: <2025-09-24 Wed>
+**** DONE Skills Workshop 3 Memo
+DEADLINE: <2025-09-24 Wed>
+**** DONE Skills Workshop 4 Presentation
+DEADLINE: <2025-09-29 Mon>
+**** DONE Skills Workshop 4 Memo
+DEADLINE: <2025-10-01 Wed>
+**** DONE Milestone 1 / Teamwork Agreement
+DEADLINE: <2025-10-06 Mon>
+**** DONE [#A] SLDP Technical Memo 1
+DEADLINE: <2025-10-07 Tue>
+**** DONE Skills Workshop 5 Presentation
+DEADLINE: <2025-10-13 Mon>
+**** DONE Skills Workshop 5 Lab Report
+DEADLINE: <2025-10-15 Wed>
+**** DONE Resume
+DEADLINE: <2025-10-20 Mon>
+**** DONE SLDP Technical Memo 2
+DEADLINE: <2025-10-22 Wed>
+**** DONE Skills Workshop 6 Presentation
+DEADLINE: <2025-10-27 Mon>
+**** DONE Skills Workshop 6 Lab Report
+DEADLINE: <2025-10-28 Tue>
+**** DONE Milestone 2
+DEADLINE: <2025-11-03 Mon>
+***** DONE Obtain sensor + cleaned plotted screenshots
+DEADLINE: <2025-10-31 Fri>
+**** DONE CATME Peer Review
+DEADLINE: <2025-11-02 Sun 23:59>
+**** DONE SLDP Technical Memo 3
+DEADLINE: <2025-11-05 Wed>
+**** DONE Cover Leter
+DEADLINE: <2025-11-10 Mon>
+**** DONE Skills Workshop 6 Lab Report Rewrite
+DEADLINE: <2025-11-12 Wed>
+**** DONE Milestone 3
+DEADLINE: <2025-11-17 Mon>
+**** TODO Final Design Report
+DEADLINE: <2025-12-03 Wed 16:50>
+**** DONE Benchmark A
+DEADLINE: <2025-10-15 Wed 16:50>
+**** DONE Benchmark B
+DEADLINE: <2025-11-05 Wed 10:50>
+**** DONE Commissioning Date
+DEADLINE: <2025-11-30 Sun>
+**** TODO Regular SLDP Submission
+DEADLINE: <2025-12-07 Sun 10:50>
+**** DONE [#B] TODO Define the difference between "Engineering/Culture and Entrepreneurship"
+DEADLINE: <2025-09-06 Sat>
+  [2025-09-05 Fri 10:28]
+**** DONE [#B] TODO Add coin collection system + laptop stand/brightness adjuster to idea form
+DEADLINE: <2025-09-06 Sat>
+  [2025-09-05 Fri 10:30]
+**** DONE [#B] Check in on Ideaiton Assignment
+DEADLINE: <2025-09-11 Thu>
+  [2025-09-10 Wed 21:31]
+**** DONE [#B] SLDP Hands-Free Modular Viewer Draft
+DEADLINE: <2025-09-13 Sat>
+  [2025-09-13 Sat 16:12]
+**** DONE Complete prototype servo horn attachment v1
+DEADLINE: <2025-10-29 Wed>
+*** Intro to Programming and Problem Solving : CS-UY 1114 Section B
+:PROPERTIES:
+:CATEGORY: CS-UY 1114
+:END:
+**** Exam Prep
+***** DONE EXAM 1 Prep [0%]
+DEADLINE: <2025-10-21 Tue>
+  [2025-09-02 Tue 12:11]
+****** DONE 2wks out prep
+DEADLINE: <2025-10-07 Tue>
+****** DONE 1wk out prep
+DEADLINE: <2025-10-14 Tue>
+****** DONE 3 days out prep
+DEADLINE: <2025-10-18 Sat>
+***** DONE EXAM 2 Prep [0%]
+DEADLINE: <2025-11-18 Tue>
+****** DONE 2wks out prep
+DEADLINE: <2025-11-04 Tue>
+****** DONE 1wk out prep
+DEADLINE: <2025-11-11 Tue>
+****** DONE 3 days out prep
+DEADLINE: <2025-11-15 Sat>
+***** TODO CS Final Exam [0%]
+DEADLINE: <2025-12-16 Tue>
+****** TODO CS Finals 1 wk out
+DEADLINE: <2025-12-09 Tue>
+****** TODO CS Finals 2 wks out
+DEADLINE: <2025-12-02 Tue>
+**** Quick Checks
+***** DONE [#B] QC-Day-0
+DEADLINE: <2025-09-17 Wed 08:00>
+***** DONE [#B] QC-Day-1
+DEADLINE: <2025-09-17 Wed 08:00>
+***** DONE [#B] QC-Day-2
+DEADLINE: <2025-09-17 Wed 08:00>
+***** DONE [#B] QC-Day-3
+DEADLINE: <2025-09-17 Wed 08:00>
+***** DONE [#B] QC-Day-4
+DEADLINE: <2025-09-17 Wed 08:00>
+***** DONE [#B] QC-Day-6
+DEADLINE: <2025-09-24 Wed 08:00>
+***** DONE [#B] QC-Day 7
+DEADLINE: <2025-09-29 Mon>
+***** DONE [#B] QC-Day 8
+DEADLINE: <2025-10-01 Wed>
+***** DONE QC-Day 9
+DEADLINE: <2025-10-06 Mon>
+***** DONE QC-Day 10
+DEADLINE: <2025-10-08 Wed>
+***** DONE QC-Day 11
+DEADLINE: <2025-10-14 Tue>
+***** DONE QC-Day 12
+DEADLINE: <2025-10-15 Wed>
+***** DONE QC-Day 13
+DEADLINE: <2025-10-20 Mon>
+***** DONE QC-Day 14
+DEADLINE: <2025-10-22 Wed>
+***** DONE QC-Day 15
+DEADLINE: <2025-10-27 Mon>
+***** DONE QC-Day 16
+DEADLINE: <2025-10-29 Wed>
+***** DONE QC-Day 17
+DEADLINE: <2025-11-03 Mon>
+***** DONE QC-Day 18
+DEADLINE: <2025-11-05 Wed>
+***** DONE QC-Day 19
+DEADLINE: <2025-11-10 Mon>
+***** DONE QC Day 20
+DEADLINE: <2025-11-12 Wed>
+***** DONE QC Day 21
+DEADLINE: <2025-11-17 Mon>
+***** DONE QC Day 22
+DEADLINE: <2025-11-19 Wed>
+**** Exercise Sets
+***** DONE [#A] ES-Day-0
+DEADLINE: <2025-09-18 Thu>
+      Exercise set problems from the content due for day 0.
+***** DONE [#A] ES-Day-1
+DEADLINE: <2025-09-18 Thu 08:00>
+***** DONE [#A] ES-Day-2
+DEADLINE: <2025-09-18 Thu 08:00>
+***** DONE [#B] ES-Day-3
+DEADLINE: <2025-09-18 Thu 08:00>
+***** DONE [#B] ES-Day-4
+DEADLINE: <2025-09-18 Thu 08:00>
+***** DONE [#B] ES-Day-6
+DEADLINE: <2025-09-25 Thu 08:00>
+***** DONE ES-Day 7
+DEADLINE: <2025-09-30 Tue 08:00>
+***** DONE ES-Day 10
+DEADLINE: <2025-10-09 Thu>
+***** DONE ES-Day 11
+DEADLINE: <2025-10-15 Wed>
+***** DONE ES-Day 12
+DEADLINE: <2025-10-16 Thu>
+**** DONE [#A] First CS Lab Exam
+DEADLINE: <2025-09-26 Fri>
+next friday is the first lab exam, covering stuff up to next wednesday
+conditionals, while loops, truth tables, boolean expressions,
+  [2025-09-17 Wed 11:35]
+**** DONE ES Day 18
+DEADLINE: <2025-11-06 Thu>
+**** DONE ES Day 19
+DEADLINE: <2025-11-10 Mon>
+**** DONE ES Day 22
+DEADLINE: <2025-11-19 Wed>
+*** Calculus 1 for Engineers : MA-UY 1024 Section E
+:PROPERTIES:
+:CATEGORY: MA-UY 1024
+:END:
+**** Webassign Sections
+***** DONE [#B] Section 1.4 (Homework)
+      DEADLINE: <2025-09-15 Mon 23:59>
+***** DONE [#B] Section 1.5 (Homework)
+      DEADLINE: <2025-09-15 Mon 23:59>
+***** DONE [#B] Section 2.1 (Homework)
+      DEADLINE: <2025-09-19 Fri 23:59>
+***** DONE [#B] Section 2.2 (Homework)
+      DEADLINE: <2025-09-19 Fri 23:59>
+***** DONE [#B] Section 2.3 (Homework)
+      DEADLINE: <2025-09-22 Mon 23:59>
+***** DONE [#B] Section 2.5 (Homework)
+      DEADLINE: <2025-09-22 Mon 23:59>
+***** DONE [#B] Section 2.6 (Homework)
+      DEADLINE: <2025-09-24 Wed 23:59>
+***** DONE [#B] Section 2.8 (Homework)
+      DEADLINE: <2025-09-29 Mon 23:59>
+***** DONE [#B] Section 2.7 (Homework)
+      DEADLINE: <2025-09-29 Mon 23:59>
+***** KILL [#B] Exam 1 Practice Questions (Practice)
+      DEADLINE: <2025-09-30 Tue 12:00>
+***** DONE [#B] Section 3.1 (Homework)
+      DEADLINE: <2025-10-06 Mon 23:59>
+***** DONE [#B] Section 3.2 (Homework)
+      DEADLINE: <2025-10-06 Mon 23:59>
+***** DONE [#B] Section 3.3 (Homework)
+      DEADLINE: <2025-10-06 Mon 23:59>
+***** DONE [#B] Section 3.4 (Homework)
+      DEADLINE: <2025-10-13 Mon 23:59>
+***** DONE [#B] Section 3.5 (Homework)
+      DEADLINE: <2025-10-13 Mon 23:59>
+***** DONE [#B] Section 3.6 (Homework)
+      DEADLINE: <2025-10-20 Mon 23:59>
+***** DONE [#B] Section 3.9 (Homework)
+      DEADLINE: <2025-10-24 Fri 23:59>
+***** DONE [#B] Section 3.10 (Homework)
+      DEADLINE: <2025-10-27 Mon 23:59>
+***** DONE [#B] Section 3.11 (Homework)
+      DEADLINE: <2025-10-29 Wed 23:59>
+***** DONE [#B] Section 4.1 (Homework)
+      DEADLINE: <2025-11-03 Mon 23:59>
+***** DONE [#B] Exam 2 Practice (Practice)
+      DEADLINE: <2025-11-04 Tue 12:00>
+***** DONE [#B] Section 4.2 (Homework)
+      DEADLINE: <2025-11-10 Mon 23:59>
+***** DONE [#B] Section 4.3 (Homework)
+      DEADLINE: <2025-11-12 Wed 23:59>
+***** DONE [#B] Section 4.4 (Homework)
+      DEADLINE: <2025-11-17 Mon 23:59>
+***** DONE [#B] Section 4.7 (Homework)
+      DEADLINE: <2025-11-26 Wed 23:59>
+***** DONE [#B] Section 4.9 (Homework)
+      DEADLINE: <2025-12-01 Mon 23:59>
+***** TODO [#B] Section 5.1 (Homework)
+      DEADLINE: <2025-12-05 Fri 23:59>
+***** TODO [#B] Section 5.2 (Homework)
+      DEADLINE: <2025-12-05 Fri 23:59>
+***** TODO [#B] Section 5.3 (Homework)
+      DEADLINE: <2025-12-08 Mon 23:59>
+***** TODO [#B] Section 5.4 (Homework)
+      DEADLINE: <2025-12-12 Fri 23:59>
+***** TODO [#B] Section 5.5 (Homework)
+      DEADLINE: <2025-12-12 Fri 23:59>
+***** TODO [#B] Final Exam Review Problems (Practice)
+      DEADLINE: <2025-12-16 Tue 23:59>
+
+**** Exams & Prep
+***** DONE EXAM 1 Prep [0%]
+      DEADLINE: <2025-09-30 Tue>
+****** DONE 1wk out prep
+       DEADLINE: <2025-09-23 Tue>
+****** DONE [#A] 3day out prep
+       DEADLINE: <2025-09-27 Sat>
+***** DONE Exam 2
+      DEADLINE: <2025-11-04 Tue>
+****** DONE Exam 2 Prep (1wk out)
+       DEADLINE: <2025-10-28 Tue>
+****** DONE Exam 2 Prep (2wk out)
+       DEADLINE: <2025-10-21 Tue>
+****** DONE [#A] Exam 2 Prep (3d out)
+       DEADLINE: <2025-11-01 Sat>
+***** DONE Exam 2 Practice (Practice)
+      DEADLINE: <2025-11-04 Tue 12:00>
+***** TODO Final Exam Review Problems (Practice)
+      DEADLINE: <2025-12-16 Tue 23:59>
+***** TODO MATH FINALS [0/3]
+DEADLINE: <2025-12-15 Mon>
+****** TODO Math finals prep 3 days away
+DEADLINE: <2025-12-12 Fri>
+****** TODO Math finals prep 1 week away
+DEADLINE: <2025-12-08 Mon>
+****** TODO Math finals prep 2 weeks away
+DEADLINE: <2025-12-01 Mon>
+
+**** Problem Sets
+***** DONE [#A] Set up online platforms [0/0]
+      DEADLINE: <2025-09-02 Tue 22:30>
+****** DONE [#A] WebAssign, via Brightspace
+       [2025-09-02 Tue 14:05]
+****** DONE [#A] Gradescope setup
+***** DONE PS0 Due
+      DEADLINE: <2025-09-12 Fri>
+***** DONE [#A] Quiz 1 Due
+      DEADLINE: <2025-09-15 Mon>
+***** DONE Quiz 2 Due
+      DEADLINE: <2025-09-22 Mon>
+***** DONE PS 1 Due
+      DEADLINE: <2025-09-26 Fri>
+***** DONE Quiz 3
+      DEADLINE: <2025-10-06 Mon>
+***** DONE Quiz 4
+      DEADLINE: <2025-10-13 Mon>
+***** DONE PS 2 Due
+      DEADLINE: <2025-10-17 Fri>
+***** DONE Quiz 5
+      DEADLINE: <2025-10-20 Mon>
+***** DONE Quiz 6
+      DEADLINE: <2025-10-27 Mon>
+***** DONE PS 3 Due
+      DEADLINE: <2025-10-31 Fri>
+***** DONE Quiz 7
+      DEADLINE: <2025-11-10 Mon>
+***** DONE Quiz 8
+      DEADLINE: <2025-11-17 Mon>
+***** DONE PS 4 due
+      DEADLINE: <2025-11-21 Fri>
+***** DONE Quiz 9 Due
+      DEADLINE: <2025-12-01 Mon>
+***** TODO PS 5 Due
+      DEADLINE: <2025-12-05 Fri>
+***** TODO Quiz 10 Due
+      DEADLINE: <2025-12-08 Mon>
+**** Misc
+***** DONE [#A] Update TODOS to also include Webassign assignments (Section 1.5..)
+      DEADLINE: <2025-09-11 Thu>
+
+*** Writing as Inquiry : EXPOS-UY 1 Section B
+:PROPERTIES:
+:CATEGORY: EXPOS-UY 1
+:END:
+
+**** DONE [#A] Read John Berger, “Why Look at Animals?"
+SCHEDULED: <2025-09-03 Wed> DEADLINE: <2025-09-04 Thu>
+  [2025-09-02 Tue 13:35]
+**** DONE [#B] Assigned Reading :(
+DEADLINE: <2025-09-09 Tue>
+**** DONE [#B] Assigned reading again
+DEADLINE: <2025-09-11 Thu>
+  [2025-09-09 Tue 13:51]
+**** DONE [#A] Animal Field Research HANDWRITTEN Paper
+SCHEDULED: <2025-09-14 Sun> DEADLINE: <2025-09-16 Tue>
+Your assignment for Tuesday, to be completed over the weekend, is to find an animal or an image of an animal to consider and describe. This could take you too NYC's zoos, parks, aquarium, or its many museums. Studying at NYU gives you access to the unique resources of the city.
+
+The object of the assignment is to engage in field research: finding an animal in a natural or human-made habitat, or an art object in the context of a collection. This kind of inquiry takes you offline and outside, requiring you to interact with the physical environment.
+
+Please write a one-page handwritten description of your encounter with the animal or image, providing extensive details about what you observed. Upload a photo of your written description to Brightspace. You can also include supporting materials such as photos and videos of the subject, but these do not substitute for the written description.
+**** DONE [#A] Typed Essay for class submitted
+DEADLINE: <2025-09-23 Tue>
+  [2025-09-18 Thu 13:37]
+**** DONE [#A] 5 Page Version of Essay for Class
+DEADLINE: <2025-09-25 Thu>
+**** DONE [#A] Final draft is due
+DEADLINE: <2025-09-28 Sun>
+  [2025-09-25 Thu 09:50]
+**** DONE [#B] Finish reading & look up cited authors
+DEADLINE: <2025-10-07 Tue>
+  [2025-10-02 Thu 19:02]
+**** DONE [#A] Preliminary draft
+DEADLINE: <2025-10-28 Tue>
+**** DONE [#A] Preliminary Argumentative Draft for Peer Review
+DEADLINE: <2025-11-04 Tue>
+*** Data Science Bootcamp
+:PROPERTIES:
+:CATEGORY: DS/AI Camp
+:END:
+**** DONE [#A] Complete acceptance form before deadline
+DEADLINE: <2025-09-22 Mon 11:59>
+**** DONE [#B] Form Groups for DS
+DEADLINE: <2025-10-10 Fri>
+**** DONE [#A] Take-Home Week 1 & Teaching Feedback
+DEADLINE: <2025-10-08 Wed>
+**** DONE Take-Home Week 2 (Pandas + MPL) & Teaching Form
+DEADLINE: <2025-10-16 Thu>
+**** DONE Take Home Week 3
+**** DONE T ake-Home Week 4
+DEADLINE: <2025-11-06 Thu>
+* TODOLIST
+** DONE [#B] Email Lizzy [3/3]
+DEADLINE: <2025-08-31 Sun>
+  - [X] Follow up on L2L practice times
+  - [X] Horwitz private
+  - [X] Nancy private
+  [2025-08-29 Fri]
+** DONE Update GCal for mom DEADLINE: <2025-08-29 Fri>
+  [2025-08-29 Fri]
+** DONE Email Jon a 2-liner
+   DEADLINE: <2025-08-29 Fri> CLOSED: [2025-08-29 Fri 19:51]
+   [2025-08-29 Fri]
+** DONE Check discounted unliimted phone plan
+   - [X] contact concierge because the discounted 199 rate is not going through
+   DEADLINE: <2025-08-30 Sat>
+** DONE Complete NYU Mandatory Trainings [2/2]
+   DEADLINE: <2025-09-07 Sun>
+   - [X] Harrassment
+   - [X] Alcohol
+   [2025-08-29 Fri]
+** DONE [#B] Reach back out to NYU Wellness FD to schedule meeting
+   SCHEDULED: <2025-09-15 Mon> DEADLINE: <2025-09-02 Tue>
+   [2025-08-29 Fri]
+** DONE EXPLORE TANDON! [2/2]
+  SCHEDULED: <2025-09-02 Tue>
+  - [X] Find the PTC (tutoring center)
+    2 MetroTech Center, Room 983
+  - [X] Explore the Library!
+  [2025-08-29 Fri]
+** KILL Use org scheduling feature to give myself pings of how long I expect to work on something.
+DEADLINE: <2025-09-13 Sat> SCHEDULED: <2025-09-05 Fri>
+** DONE [#A] Set monthly availability with Aislinn before it's too late
+SCHEDULED: <2025-09-06 Sat> DEADLINE: <2025-09-09 Tue>
+  [2025-09-02 Tue 11:55]
+** DONE [#B] Contact Jon about 2-3hr admin time possibility
+DEADLINE: <2025-09-13 Sat>
+  [2025-09-02 Tue 22:54]
+** DONE [#A] Check MakerSpace for 3D printer in-person trainings
+SCHEDULED: <2025-09-08 Mon> DEADLINE: <2025-09-08 Mon>
+  [2025-09-02 Tue 23:01]
+** TODO Check MakerSpace for more in-person trainings
+DEADLINE: <2025-12-01 Mon +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2025-11-30 Sun 20:33]
+:END:
+- State "KILL"       from "TODO"       [2025-11-30 Sun 20:33]
+- State "KILL"       from "TODO"       [2025-11-30 Sun 20:33]
+- State "DONE"       from "TODO"       [2025-11-11 Tue 17:10]
+- State "DONE"       from "TODO"       [2025-11-05 Wed 11:01]
+- State "DONE"       from "TODO"       [2025-10-27 Mon 11:42]
+- State "KILL"       from "TODO"       [2025-10-25 Sat 18:59]
+- State "DONE"       from "TODO"       [2025-10-13 Mon 22:12]
+- State "DONE"       from "TODO"       [2025-10-06 Mon 11:41]
+- State "DONE"       from "TODO"       [2025-09-29 Mon 12:01]
+- State "DONE"       from "TODO"       [2025-09-22 Mon 10:47]
+** KILL [#C] Check on Brightspace/Gradescope G-calendar integration
+DEADLINE: <2025-09-06 Sat>
+  [2025-09-04 Thu 13:47]
+
+** KILL [#B] NYU Prototyping Fund Application
+DEADLINE: <2025-09-29 Mon>
+  [2025-09-18 Thu 12:54]
+** KILL [#B] Email Horwitz about private availability
+DEADLINE: <2025-09-24 Wed>
+  [2025-09-22 Mon 11:18]
+** DONE [#B] Ask MakerSpace about Storage, Event Zoom, pausing prints [0%]
+DEADLINE: <2025-09-23 Tue>
+  [2025-09-22 Mon 12:48]
+*** DONE Email Makerspace for Intro to Fusion Slides
+DEADLINE: <2025-09-24 Wed>
+*** DONE Check back in about storage requests
+DEADLINE: <2025-09-26 Fri>
+** DONE [#B] Book a good study room for Friday
+DEADLINE: <2025-10-06 Mon>
+  [2025-10-03 Fri 20:49]
+** DONE [#A] Set work availability for the month
+DEADLINE: <2025-10-09 Thu>
+  [2025-10-08 Wed 11:13]
+** DONE [#A] Reach out to SVA professors & update Michael
+DEADLINE: <2025-10-11 Sat>
+  [2025-10-08 Wed 11:39]
+** DONE [#B] Take calipers and measure the radially symmetrical horns to model in CAD
+DEADLINE: <2025-10-17 Fri>
+  [2025-10-14 Tue 11:15]
+** DONE Go to career hub's interview practice booking
+DEADLINE: <2025-10-30 Thu>
+** DONE book career hub interview practice
+DEADLINE: <2025-10-27 Mon>
+** DONE [#A] Apply to VIPs
+DEADLINE: <2025-11-06 Thu>
+** DONE [#A] Spring Enrollment
+DEADLINE: <2025-11-20 Thu>
+*** DONE [#A] Sort out Spring Enrollment (1wk out)
+DEADLINE: <2025-11-13 Thu>

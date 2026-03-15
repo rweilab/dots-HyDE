@@ -1,0 +1,306 @@
+#+TITLE: 2026 Spring Semester Org File
+
+* Digital Logic and State Machine Design (ECE-UY 2204 C-LAB)
+:PROPERTIES:
+:CATEGORY: DL/SMD
+:END:
+** Exams
+*** DONE Midterm 1 [0%]
+DEADLINE: <2026-03-10 Tue>
+**** DONE Midterm (1wk away)
+DEADLINE: <2026-03-03 Tue>
+**** DONE Midterm (3 days away)
+DEADLINE: <2026-03-07 Sat>
+*** TODO Midterm 2 [0%]
+DEADLINE: <2026-04-14 Tue>
+**** TODO Midterm (1wk away)
+DEADLINE: <2026-04-07 Tue>
+**** TODO Midterm (3 days away)
+DEADLINE: <2026-04-11 Sat>
+
+** Homework
+*** DONE Install ModelSim to either T14G2 or 7600X
+DEADLINE: <2026-01-22 Thu>
+*** DONE HW1
+DEADLINE: <2026-02-13 Fri>
+*** DONE HW1 Answers posted
+DEADLINE: <2026-02-21 Sat>
+*** DONE HW2
+DEADLINE: <2026-02-27 Fri>
+*** DONE HW 3
+DEADLINE: <2026-03-06 Fri>
+** Labs
+*** DONE Lab 2 Due
+DEADLINE: <2026-02-13 Fri>
+*** DONE Review Lab 3 before lab
+DEADLINE: <2026-02-19 Thu>
+*** DONE Lab 3 Due
+DEADLINE: <2026-03-01 Sun>
+*** DONE Lab 4
+DEADLINE: <2026-03-13 Fri>
+
+* Calculus II for Engineers (MA-UY 1124 Section E)
+:PROPERTIES:
+:CATEGORY: Calc II
+:END:
+** Webassign
+*** DONE Review of prerequisites
+  DEADLINE: <2026-02-06 Fri 23:56>
+*** DONE 5.3-4 FTC and net change
+  DEADLINE: <2026-02-06 Fri 23:57>
+*** DONE 5.5 The Substitution Rule
+DEADLINE: <2026-02-06 Fri>
+*** DONE 7.1 Integration by Parts
+DEADLINE: <2026-02-06 Fri>
+*** DONE 7.2 Trigonometric Integrals
+DEADLINE: <2026-02-13 Fri>
+*** KILL 7.3 Trigonometric Substitution
+DEADLINE: <2026-02-13 Fri>
+*** DONE 7.4 Partial Fractions
+DEADLINE: <2026-02-13 Fri>
+*** DONE 7.7 Numerical Integration
+DEADLINE: <2026-02-20 Fri>
+*** DONE 7.8 Improper Integrals
+DEADLINE: <2026-02-20 Fri>
+*** DONE 6.1 Area Between The Curves
+DEADLINE: <2026-02-27 Fri>
+*** DONE 6.2 Volumes of bodies w/prescribed cross-section
+DEADLINE: <2026-03-06 Fri>
+*** DONE Exam 1 Short Review
+DEADLINE: <2026-02-27 Fri>
+*** DONE 6.3 Solids of Revolution
+DEADLINE: <2026-03-06 Fri>
+*** DONE 9.2-4 Separable Equations
+DEADLINE: <2026-03-13 Fri>
+*** KILL 9.1 Modeling with Differential Equations
+DEADLINE: <2026-03-13 Fri>
+*** DONE 8.1 Arclength
+DEADLINE: <2026-03-13 Fri>
+** Problem Sets (Gradescope)
+*** DONE Problem Set 0
+DEADLINE: <2026-02-02 Mon 23:59>
+*** DONE Problem Set 1
+SCHEDULED: <2026-02-02 Mon> DEADLINE: <2026-02-09 Mon>
+*** DONE PS2
+DEADLINE: <2026-03-02 Mon>
+*** TODO PS3
+SCHEDULED: <2026-03-19 Thu> DEADLINE: <2026-03-23 Mon>
+** Exams
+*** DONE Midterm 1 [0%]
+DEADLINE: <2026-02-24 Tue>
+**** DONE Midterm (1wk away)
+DEADLINE: <2026-02-17 Tue>
+**** DONE Midterm (3 days away)
+DEADLINE: <2026-02-21 Sat>
+*** TODO Midterm 2 [%]
+DEADLINE: <2026-03-31 Tue>
+**** TODO Midterm (1wk away)
+DEADLINE: <2026-03-24 Tue>
+**** TODO Midterm (3 days away)
+DEADLINE: <2026-03-28 Sat>
+* Mechanics (PH-UY 1013 B2LC B2RC)
+:PROPERTIES:
+:CATEGORY: Mechanics
+:END:
+** Webassign
+** Exams
+*** TODO PH Midterm 1 [0%]
+DEADLINE: <2026-03-24 Tue>
+**** TODO Midterm (3 days away)
+DEADLINE: <2026-03-21 Sat>
+**** TODO Midterm (1wk away)
+DEADLINE: <2026-03-17 Tue>
+**** TODO Midterm (2wks away)
+DEADLINE: <2026-03-10 Tue>
+
+** TODO Physics Weekly Homework
+DEADLINE: <2026-03-20 Fri 08:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2026-03-12 Thu 20:24]
+:END:
+- State "DONE"       from "TODO"       [2026-03-12 Thu 20:24]
+- State "DONE"       from "TODO"       [2026-03-05 Thu 16:17]
+- State "DONE"       from "TODO"       [2026-02-27 Fri 09:27]
+- State "DONE"       from "TODO"       [2026-02-20 Fri 13:36]
+- State "DONE"       from "TODO"       [2026-02-13 Fri 11:03]
+- State "DONE"       from "TODO"       [2026-02-06 Fri 11:01]
+- State "DONE"       from "TODO"       [2026-01-30 Fri 08:02]
+** TODO Physics Recitation Quiz Prep
+SCHEDULED: <2026-03-18 Wed +1w> DEADLINE: <2026-03-20 Fri +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2026-03-13 Fri 22:23]
+:END:
+- State "DONE"       from "TODO"       [2026-03-13 Fri 22:23]
+- State "DONE"       from "TODO"       [2026-03-06 Fri 10:12]
+- State "DONE"       from "TODO"       [2026-02-27 Fri 09:27]
+- State "KILL"       from "TODO"       [2026-02-20 Fri 13:36]
+- State "DONE"       from "TODO"       [2026-02-13 Fri 11:03]
+- State "DONE"       from "TODO"       [2026-02-08 Sun 13:24]
+- State "DONE"       from "TODO"       [2026-01-30 Fri 08:02]
+* Data Structures and Algorithms (CS-UY 1134 A-LEC LAB3)
+:PROPERTIES:
+:CATEGORY: DSA
+:END:
+** Homework
+*** DONE Homework 1
+DEADLINE: <2026-02-06 Fri>
+*** DONE Homework 2
+DEADLINE: <2026-02-21 Sat>
+*** DONE Homework 3
+DEADLINE: <2026-03-01 Sun>
+*** DONE Speak with Dorien+TAs about time to cover recitation materials
+DEADLINE: <2026-02-19 Thu>
+*** DONE Homework 4
+DEADLINE: <2026-03-14 Sat>
+** Exams
+
+*** DONE DSA Midterm 1 [0%]
+DEADLINE: <2026-03-10 Tue>
+**** DONE Midterm (3 days away)
+DEADLINE: <2026-03-07 Sat>
+**** DONE Midterm (1wk away)
+DEADLINE: <2026-03-03 Tue>
+**** DONE Midterm (2wks away)
+DEADLINE: <2026-02-24 Tue>
+*** TODO DSA Midterm 2 [0%]
+DEADLINE: <2026-04-14 Tue>
+**** TODO Midterm (3 days away)
+DEADLINE: <2026-04-11 Sat>
+**** TODO Midterm (1wk away)
+DEADLINE: <2026-04-07 Tue>
+**** TODO Midterm (2wks away)
+DEADLINE: <2026-03-31 Tue>
+*** DSA Final
+** MISC
+*** DONE Ask TA's about [lst] and arrow formatting AND homeworks
+DEADLINE: <2026-01-30 Fri>
+* NYU Motorsports (High Voltage)
+:PROPERTIES:
+:CATEGORY: Motorsports
+:END:
+** DONE Familiarize myself with circuits and documentation
+DEADLINE: <2026-01-29 Thu>
+** DONE Design precharge circuit in KiCad/CircuitLab
+DEADLINE: <2026-02-05 Thu>
+ESF1 has information on inverter capacitance
+        "Learn about the RC Time Constant"
+        Learn/adhere to FSAE rules/compliance
+
+Can we read data from accumulator without plugging it in?
+Micro-USB Teensy has UART but no wireless
+Information from systems via CAM for BMS (research CAM)
+** DONE Read through FSAE rulebook for any relevant to pre-charge
+DEADLINE: <2026-02-03 Tue>
+        P1-5: Overview + Competition Language
+        P78-90: Electrical Overview + Accumulator
+        P98-125: GLV, Tractive Isolation, Systems + Tests, HV+Documentation
+** DONE FSAE Assignments
+DEADLINE: <2026-02-15 Sun>
+TS status indicator (TSSI)
+EV 9.5
+
+conformal coating/coding(?)
+
+ESF2
+
+monitor IMD BMS volt
+
+accumulator voltage indicator
+  in the rulebook
+  make a flowchart
+
+* NYU Robotics Design Team (Electrical Team)
+:PROPERTIES:
+:CATEGORY: RDT
+:END:
+** DONE all team meet for thursday check schedule and add it
+DEADLINE: <2026-01-29 Thu>
+** DONE ask about course deliverables (sprint documentation due date/turn-in location)
+DEADLINE: <2026-02-01 Sun>
+** DONE Sprint Report Wk 6
+DEADLINE: <2026-02-16 Mon>
+** DONE Make some PCBs for practice
+DEADLINE: <2026-03-03 Tue>
+** DONE Sprint Report 7
+DEADLINE: <2026-03-09 Mon>
+* MakerSpace TA (??? Team)
+:PROPERTIES:
+:CATEGORY: Makerspace
+:END:
+** TODO MakerSpace Getting Started + Onboarding Tracker
+DEADLINE: <2026-05-05 Tue> SCHEDULED: <2026-03-17 Tue +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2026-03-10 Tue 10:30]
+:END:
+- State "DONE"       from "TODO"       [2026-03-10 Tue 10:30]
+- State "DONE"       from "TODO"       [2026-03-04 Wed 21:39]
+- State "DONE"       from "TODO"       [2026-02-26 Thu 17:39]
+- State "DONE"       from "TODO"       [2026-02-18 Wed 14:53]
+- State "DONE"       from "TODO"       [2026-02-11 Wed 16:14]
+- State "DONE"       from "TODO"       [2026-02-04 Wed 10:28]
+- State "DONE"       from "TODO"       [2026-01-28 Wed 13:06]
+** DONE Trainings (2.5hr)
+DEADLINE: <2026-02-13 Fri>
+** TODO Complete timesheet on PeopleSync
+DEADLINE: <2026-03-15 Sun +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2026-03-08 Sun 21:34]
+:END:
+- State "DONE"       from "TODO"       [2026-03-08 Sun 21:34]
+- State "DONE"       from "TODO"       [2026-03-01 Sun 21:15]
+- State "DONE"       from "TODO"       [2026-02-23 Mon 10:59]
+- State "DONE"       from "TODO"       [2026-02-15 Sun 16:52]
+- State "DONE"       from "TODO"       [2026-02-09 Mon 09:53]
+- State "DONE"       from "TODO"       [2026-02-02 Mon 09:33]
+- State "DONE"       from "TODO"       [2026-01-25 Sun 19:23]
+** DONE Fill out workshop when2meet
+DEADLINE: <2026-02-07 Sat>
+** DONE Inform Liz about availability
+DEADLINE: <2026-02-06 Fri>
+** DONE Find two hours for Garage onboarding
+DEADLINE: <2026-01-28 Wed>
+** DONE Complete When2Meet for Inventory
+DEADLINE: <2026-01-28 Wed>
+** DONE Review Raspberry Pi Workshop Slides
+DEADLINE: <2026-02-19 Thu>
+** DONE Try to replicate rename fail bug for bambu_reports
+DEADLINE: <2026-01-28 Wed>
+** DONE Meet the TA's form
+DEADLINE: <2026-02-26 Thu>
+https://docs.google.com/forms/d/e/1FAIpQLSeJS7Izm7qnu8ISYUD_Eyt0wsEHP2dKjWDnlDKJvdQ42h0Qog/viewform
+** DONE make sure the Pi workshop works!!
+DEADLINE: <2026-02-26 Thu>
+** DONE Extra printer cost estimates
+DEADLINE: <2026-03-06 Fri>
+** DONE Printer bumper back print some more
+DEADLINE: <2026-03-07 Sat>
+* MISC TODOS
+:PROPERTIES:
+:CATEGORY: MISC
+:END:
+** DONE Watch "[[https://youtu.be/nZrxs-U9d8o][Visually determining antiderivative | AP Calculus AB | Khan Academy - YouTube]]"
+SCHEDULED: <2026-01-21 Wed>
+** DONE Send hardware/electronic receipts to Mom
+SCHEDULED: <2026-01-29 Thu> DEADLINE: <2026-02-01 Sun>
+** TODO Make sure Movement LIC timesheet is correct
+DEADLINE: <2026-03-15 Sun +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2026-03-08 Sun 21:32]
+:END:
+- State "DONE"       from "TODO"       [2026-03-08 Sun 21:32]
+- State "DONE"       from "TODO"       [2026-03-01 Sun 21:15]
+- State "DONE"       from "TODO"       [2026-02-23 Mon 10:58]
+- State "DONE"       from "TODO"       [2026-02-15 Sun 10:10]
+- State "DONE"       from "TODO"       [2026-02-09 Mon 09:53]
+- State "DONE"       from "TODO"       [2026-02-02 Mon 09:32]
+- State "DONE"       from "TODO"       [2026-01-25 Sun 19:24]
+** TODO Monthly LIC Schedule
+DEADLINE: <2026-04-10 Fri +1m>
+:PROPERTIES:
+:LAST_REPEAT: [2026-03-10 Tue 16:58]
+:END:
+- State "DONE"       from "TODO"       [2026-03-10 Tue 16:58]
+** TODO Harrassment/Discrimination training
+DEADLINE: <2026-02-19 Thu>
+** TODO Schedule time with Roman for Sewing/Embroidery Training
+DEADLINE: <2026-03-18 Wed>
