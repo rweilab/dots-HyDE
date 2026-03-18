@@ -46,6 +46,8 @@ function y() {
 export EDITOR=nvim
 export VISUAL=nvim
 
+alias emc="nohup emacsclient -c & disown"
+
 # ----- good bloat identifier ------
 # zmodload zsh/zprof
 # # (Close and reopen terminal, then run:)
