@@ -11,13 +11,13 @@ for easy setup of sensible defaults which also *change folder structure*.
 
 ## Notes to future self:  
 
-about:config  
-    toolkit.legacyUserProfileCustomizations.stylesheets -> True  
-    ui.key.menuAccessKeyFocuses -> False  
+- about:config  
+> toolkit.legacyUserProfileCustomizations.stylesheets -> True  
+> ui.key.menuAccessKeyFocuses -> False  
 
-about:support  
+- about:support  
+> chrome/userChrome.css needs to be created with:  
 
-    chrome/userChrome.css needs to be created with:  
 ```
 #TabsToolbar {
 	visibility: collapse !important;
