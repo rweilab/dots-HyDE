@@ -47,6 +47,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias emc="nohup emacsclient -c & disown"
+alias n="nvim"
 
 # ----- good bloat identifier ------
 # zmodload zsh/zprof
