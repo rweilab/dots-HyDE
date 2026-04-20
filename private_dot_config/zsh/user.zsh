@@ -47,6 +47,8 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias emc="nohup emacsclient -c & disown"
+alias chezomi="chezmoi"
+alias yeet='paru -Rcs'
 alias n="nvim"
 
 # ----- good bloat identifier ------
