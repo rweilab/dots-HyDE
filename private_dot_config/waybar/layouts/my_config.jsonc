@@ -46,7 +46,7 @@
     ],
     "group/pill#right1": {
 	"modules": [
-	    // "backlight",
+	    "backlight",
 	    // "network",
 	    // "pulseaudio",
 	    // "pulseaudio#microphone",
