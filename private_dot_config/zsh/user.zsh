@@ -50,6 +50,8 @@ alias emc="nohup emacsclient -c & disown"
 alias chezomi="chezmoi"
 alias yeet='paru -Rcs'
 alias n="nvim"
+alias nn="nvim ~/syncthing/2026_Spring/notes"
+
 
 # ----- good bloat identifier ------
 # zmodload zsh/zprof
