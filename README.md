@@ -1,5 +1,5 @@
 # Chezmoi Files
-This was going to be a GNU STOW system but unfortunately Stow works better as a *symlink manager* and not as a pack-up-and-go environment. Maybe one day I'll learn NixOS.
+This was going to be a `GNU Stow` system but unfortunately Stow works better as a *symlink manager* and not as a pack-up-and-go environment. Maybe one day I'll learn NixOS.
 
 ## Note:
 To be used after installing **Project HyDE** which changes directory structures.
@@ -26,7 +26,7 @@ for easy setup of sensible defaults which also *change folder structures*.
 	display: none ~important;
 }
 
-/* Auto-hide navbar snippet thanks to https://github.com/3ae3ae/firefox-autohide-navbar/blob/main/README.md */
+/* Auto-hide navbar snippet thanks to https://github.com/3ae3ae/firefox-autohide-navbar/ */
 #navigator-toolbox:not(:hover) > #titlebar,
 #navigator-toolbox:has(#PersonalToolbar:hover) > #titlebar,
 #navigator-toolbox:not(:hover) > #nav-bar,
