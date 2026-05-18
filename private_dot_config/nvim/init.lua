@@ -416,9 +416,9 @@ vim.api.nvim_create_autocmd("FileType", {
 
 
 vim.keymap.set("n", "<Leader>fnn", function()
-  Snacks.picker.files({cwd = "~/notes"})
+  Snacks.picker.files({cwd = "~/syncthing/RAM/notes"})
 end, {desc = "Find notes by name"})
 
 vim.keymap.set("n", "<Leader>fng", function()
-  Snacks.picker.grep({cwd = "~/notes"})
+  Snacks.picker.grep({cwd = "~/syncthing/RAM/notes"})
 end, {desc = "Grep notes"})
